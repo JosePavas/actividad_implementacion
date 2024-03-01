@@ -31,7 +31,10 @@ lista = [
         "grades":[4,4,5,3,2]
     }]
 
-    
+lc = [Student(name=estudiante["name"], age=estudiante["age"], grades=estudiante["grades"]) for estudiante in lista]
+for elemento in lc:
+    print(elemento.name)
+#Student("alberto",19,[1,2,3,4,5])
     
    
                
