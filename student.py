@@ -38,6 +38,6 @@ for elemento in lc:
 lc2 = [Student(name=nota["name"], age=nota["age"], grades=nota["grades"]) for nota in lista 
        if sum(nota["grades"]) / len(nota["grades"]) <= 3]
 
-dt = {Student(name=i["name"]) : Student(name=i["name"], age=i["age"], grades=i["grades"]) for i in lista 
+dt = {(i["name"]) : Student(name=i["name"], age=i["age"], grades=i["grades"]) for i in lista 
       if sum(i["grades"]) / len(i["grades"]) >= 3}
     
