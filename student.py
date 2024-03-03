@@ -35,6 +35,9 @@ lc = [Student(name=estudiante["name"], age=estudiante["age"], grades=estudiante[
 for elemento in lc:
     print(elemento.name)
 #Student("alberto",19,[1,2,3,4,5])
+lc2 = [Student(name=nota["name"], age=nota["age"], grades=nota["grades"]) for nota in lista 
+       if sum(nota["grades"]) / len(nota["grades"]) <= 3]
+
+dt = {Student(name=i["name"]) : Student(name=i["name"], age=i["age"], grades=i["grades"]) for i in lista 
+      if sum(i["grades"]) / len(i["grades"]) >= 3}
     
-   
-               
